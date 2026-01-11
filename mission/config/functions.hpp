@@ -396,6 +396,7 @@ class CfgFunctions
 			class sites_create_compositions_radar {};
 			class sites_create_compositions_tunnel {};
 			class sites_create_compositions_water_supply {};
+			class sites_create_compositions_stash {};
 			// old not used
 			class sites_create_tunnel {};
 			class sites_create_camp {};
@@ -417,6 +418,7 @@ class CfgFunctions
 			class sites_create_site_hq {};
 			class sites_create_site_factory {};
 			class sites_create_site_radar {};
+			class sites_create_site_stash {};
 		}
 
 		// utility functions to simplify/DRY the existing site code
