@@ -84,6 +84,13 @@ if (!_isMedikit) then {
 
 private _after = (_before - 0.35) max 0;
 _wounds set [_bodyPart, _after];
+private _healedAmount = _before - _after;
+private _patientOwner = owner _patient;
+if (local _patient) then {
+    [_patient, _bodyPart, _healedAmount] call vn_mf_fnc_medical_apply_treatment_damage;
+} else {
+    [_patient, _bodyPart, _healedAmount] remoteExecCall ["vn_mf_fnc_medical_apply_treatment_damage", _patientOwner];
+};
 
 private _head = _wounds getOrDefault ["head", 0];
 private _torso = _wounds getOrDefault ["torso", 0];
@@ -103,7 +110,7 @@ if (!_unconscious) then {
 };
 
 _patient setVariable ["vn_revive_incapacitated", _unconscious, true];
-_patient setUnconscious _unconscious;
+[_patient, _unconscious] remoteExecCall ["vn_mf_fnc_medical_set_unconscious", _patient];
 _actor setVariable ["vn_mf_medical_treat_cooldown", serverTime + 2, false];
 
 [_patient, true] call vn_mf_fnc_medical_replicate_state;

@@ -30,7 +30,7 @@ if (_key isEqualTo "") then {
 private _state = call vn_mf_fnc_medical_state_default;
 vn_mf_medical_state_registry set [_key, _state];
 
-_unit setUnconscious false;
+[_unit, false] remoteExecCall ["vn_mf_fnc_medical_set_unconscious", _unit];
 _unit setVariable ["vn_revive_incapacitated", false, true];
 
 [_unit, true] call vn_mf_fnc_medical_replicate_state;

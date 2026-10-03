@@ -1057,7 +1057,7 @@ class Mission
 			{
 				position[]={9819.9014,2074.9336,6066.748};
 			};
-			presenceCondition="(""advanced_revive"" call BIS_fnc_getParamValue) == 1";
+			presenceCondition="false";
 			id=114;
 			type="vn_module_advanced_revive";
 			atlOffset=1872.4146;

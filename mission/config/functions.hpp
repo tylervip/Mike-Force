@@ -344,6 +344,7 @@ class CfgFunctions
 			class medical_state_reset_unit {};
 			class medical_replicate_state {};
 			class medical_ingest_damage {};
+			class medical_bleedout_job {};
 			class medical_req_treat {};
 		};
 
@@ -357,6 +358,9 @@ class CfgFunctions
 			class medical_dialog_refresh {};
 			class medical_dialog_select_part {};
 			class medical_dialog_treat_selected {};
+			class medical_apply_treatment_damage {};
+			class medical_send_wound {};
+			class medical_set_unconscious {};
 		};
 
 		class system_dac_cong {

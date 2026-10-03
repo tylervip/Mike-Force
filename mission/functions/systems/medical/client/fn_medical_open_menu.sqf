@@ -18,6 +18,12 @@ params [["_forceSelf", false, [false]]];
 
 if (!hasInterface || {!alive player}) exitWith {false};
 
+// Already open: refresh instead of creating another dialog
+if (!isNull (uiNamespace getVariable ["vn_mf_RscDisplayMedical", displayNull])) exitWith {
+    [] call vn_mf_fnc_medical_dialog_refresh;
+    true
+};
+
 private _patient = player;
 if (!_forceSelf) then {
     private _candidate = cursorTarget;

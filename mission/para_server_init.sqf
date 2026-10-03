@@ -1,6 +1,7 @@
 /*
     File: para_server_init.sqf
     Author: Savage Game Design
+    Edited: Tylervip
     Public: Yes
 
     Description:
@@ -160,12 +161,6 @@ vn_mf_param_set_stamina = (["set_stamina", 1] call BIS_fnc_getParamValue);
 publicVariable "vn_mf_param_enable_stamina";
 publicVariable "vn_mf_param_set_stamina";
 
-//Set whether withstand is always available.
-vn_revive_withstand_allow = (["always_allow_withstand", 1] call BIS_fnc_getParamValue) > 0;
-publicVariable "vn_revive_withstand_allow";
-//Set number of bandages needed to withstand.
-vn_revive_withstand_amount = 4;
-publicVariable "vn_revive_withstand_amount";
 //Set number of max players per team
 vn_mf_max_players_acav = ["max_players_acav", 99] call BIS_fnc_getParamValue;
 vn_mf_max_players_greenhornets = ["max_players_greenhornets", 99] call BIS_fnc_getParamValue;;

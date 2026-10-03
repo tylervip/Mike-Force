@@ -364,6 +364,7 @@ class Mission
 			{
 				position[]={26196.689,50995.895,26149.342};
 			};
+			presenceCondition="false";
 			id=1;
 			type="vn_module_advanced_revive";
 			atlOffset=51159.469;

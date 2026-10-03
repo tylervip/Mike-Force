@@ -1066,15 +1066,6 @@
         <Original>The building supplies value of sandbags carried in the inventory.</Original>
         <English>The building supplies value of sandbags carried in the inventory.</English>
       </Key>
-      <Key ID="STR_vn_mf_advanced_revive">
-        <Original>==== Advanced Revive ====</Original>
-        <English>==== Advanced Revive ====</English>
-      </Key>
-      <Key ID="STR_vn_mf_advanced_revive_desc">
-        <Original>Enable Advanced Revive (Recommended)</Original>
-        <English>Enable Advanced Revive (Recommended)</English>
-      </Key>
-
       <Key ID="STR_vn_mf_param_teams_header">
         <Original>======== Team Settings ========</Original>
         <English>======== Team Settings ========</English>
@@ -1128,8 +1119,16 @@
         <English>==== Bleedout Time ====</English>
       </Key>
       <Key ID="STR_vn_mf_param_bleedout_time_desc">
-        <Original>The time it takes in seconds for a wounded player to die</Original>
-        <English>The time it takes in seconds for a wounded player to die</English>
+        <Original>Time in seconds before an untreated downed player dies</Original>
+        <English>Time in seconds before an untreated downed player dies</English>
+      </Key>
+      <Key ID="STR_vn_mf_param_medical_damage_reduction">
+        <Original>==== Incoming Damage Reduction ====</Original>
+        <English>==== Incoming Damage Reduction ====</English>
+      </Key>
+      <Key ID="STR_vn_mf_param_medical_damage_reduction_desc">
+        <Original>Percentage of incoming player damage prevented by the custom medical system</Original>
+        <English>Percentage of incoming player damage prevented by the custom medical system</English>
       </Key>
       <Key ID="STR_vn_mf_param_withstand_percentage">
         <Original>==== Withstand Percentage ====</Original>

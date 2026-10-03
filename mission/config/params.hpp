@@ -171,22 +171,6 @@ class building_sandbag_value_desc
 
 class Spacer8 : Spacer1 {};
 
-class advanced_revive
-{
-    title = $STR_vn_mf_advanced_revive;
-    values[] = {1, 0};
-    texts[] = {"True (Default)", "False"};
-    default = 1;
-};
-
-class advanced_revive_desc
-{
-    title = $STR_vn_mf_advanced_revive_desc;
-    values[] = {""};
-    texts[] = {""};
-    default = "";
-};
-
 class Spacer12 : Spacer1 {};
 
 class teams_header
@@ -270,27 +254,12 @@ class medical_header
 
 class Spacer16 : Spacer1 {};
 
-class headshot_kill
-{
-    title = $STR_vn_mf_param_headshot_kill;
-    values[] = {0, 1};
-    texts[] = {"Off (Default)", "On"};
-    default = 0;
-};
-
-class headshot_kill_desc
-{
-    title = $STR_vn_mf_param_headshot_kill_desc;
-    values[] = {""};
-    texts[] = {""};
-    default = "";
-};
 class bleedout_time
 {
     title = $STR_vn_mf_param_bleedout_time;
-    values[] = {100, 200, 300, 400, 500};
-    texts[] = {"100", "200", "300 (Default)", "400", "500"};
-    default = 300;
+    values[] = {60, 90, 120, 180, 240};
+    texts[] = {"60 seconds", "90 seconds", "120 seconds (Default)", "180 seconds", "240 seconds"};
+    default = 120;
 };
 
 class bleedout_time_desc
@@ -301,79 +270,20 @@ class bleedout_time_desc
     default = "";
 };
 
-class always_allow_withstand
+class medical_damage_reduction
 {
-    title = $STR_vn_mf_always_allow_withstand;
-    values[] = {0, 1};
-    texts[] = {"Off", "On (Default)"};
-    default = 1;
+    title = $STR_vn_mf_param_medical_damage_reduction;
+    values[] = {0, 10, 20, 25, 30, 40, 50};
+    texts[] = {"0%", "10%", "20%", "25% (Default)", "30%", "40%", "50%"};
+    default = 25;
 };
 
-
-class always_allow_withstand_desc
+class medical_damage_reduction_desc
 {
-    title = $STR_vn_mf_always_allow_withstand_desc;
-
+    title = $STR_vn_mf_param_medical_damage_reduction_desc;
     values[] = {""};
     texts[] = {""};
     default = "";
-};
-
-class withstand_percentage
-{
-    title = $STR_vn_mf_param_withstand_percentage;
-    values[] = {50, 70, 80, 100};
-    texts[] = {"50%", "30%", "20% (Default)", "0%"};
-    default = 80;
-};
-
-class withstand_percentage_desc
-{
-    title = $STR_vn_mf_param_withstand_percentage_desc;
-    values[] = {""};
-    texts[] = {""};
-    default = "";
-};
-
-class remove_bandage_item
-{
-    title = $STR_vn_mf_param_remove_bandage_item;
-    values[] = {0, 1};
-    texts[] = {"Off", "On (Default)"};
-    default = 1;
-};
-
-
-class remove_bandage_item_desc
-{
-    title = $STR_vn_mf_param_remove_bandage_item_desc;
-    values[] = {""};
-    texts[] = {""};
-    default = "";
-};
-
-class remove_revive_item
-{
-    title = $STR_vn_mf_param_remove_revive_item;
-    values[] = {0, 1};
-    texts[] = {"Off (Default)", "On"};
-    default = 0;
-};
-
-class remove_revive_item_desc
-{
-    title = $STR_vn_mf_param_remove_revive_item_desc;
-    values[] = {""};
-    texts[] = {""};
-    default = "";
-};
-
-class revive_requirement
-{
-    title = $STR_vn_mf_param_revive_requirement;
-    values[] = {0, 1};
-    texts[] = {"Off (Default)", "On"};
-    default = 0;
 };
 
 class respawn_delay
