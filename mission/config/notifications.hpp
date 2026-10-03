@@ -13,6 +13,15 @@ class CfgNotifications
 {
 	#include "..\paradigm\Client\configs\notifications.hpp"
 
+	class Medical
+	{
+		title = "Medical";
+		description = "%1";
+		priority = 8;
+		color[] = {0.8,0.5,0,1};
+		iconPicture = "\A3\ui_f\data\Map\Markers\Military\warning_ca.paa";
+	};
+
 	class Error {
 		priority = 8;
 		color[] = NOTIFY_COLOR_RED_HEAVY;

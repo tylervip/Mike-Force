@@ -24,6 +24,10 @@ params
 // respawn player with same loadout as before death
 if (isPlayer _entity) then
 {
+	if (isServer) then {
+		[_entity] call vn_mf_fnc_medical_state_reset_unit;
+	};
+
 	// get loadout from body
 	private _loadout = getUnitLoadout _corpse;
 

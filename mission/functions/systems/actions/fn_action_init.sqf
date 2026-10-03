@@ -44,6 +44,8 @@ if (isNil "vn_mf_actions_initialized" || vn_mf_actions_player != player) then //
 	call vn_mf_fnc_action_lower_flag;
 	call vn_mf_fnc_action_reraise_flag;
 	call vn_mf_fnc_action_crew_static;
+	// Medical interactions are UI-only (J/Shift+J); this call only removes any legacy hold actions.
+	call vn_mf_fnc_medical_action_self_treat;
 	"vn_holdActionAdd_layer" cutText ["","PLAIN"];
 	// curator / admin / moderator only
 	call vn_mf_fnc_action_curator_force_recover_wrecked_vehicle;

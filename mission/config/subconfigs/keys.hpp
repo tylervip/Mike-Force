@@ -96,6 +96,30 @@ class vn_mf_task_roster_action
 	access = 1;
 };
 
+class vn_mf_medical_menu_target
+{
+	defaultKey = DIK_J;
+	shift = "false";
+	ctrl = "false";
+	alt = "false";
+	function = "vn_mf_fnc_medical_open_menu_target";
+	down = 0;
+	displayName = "Medical Menu (Target or Self)";
+	access = 1;
+};
+
+class vn_mf_medical_menu_self
+{
+	defaultKey = DIK_J;
+	shift = "true";
+	ctrl = "false";
+	alt = "false";
+	function = "vn_mf_fnc_medical_open_menu_self";
+	down = 0;
+	displayName = "Medical Menu (Self)";
+	access = 1;
+};
+
 class vn_mf_ack_hint_card {
 	defaultKey = DIK_8;
 	shift = "false";

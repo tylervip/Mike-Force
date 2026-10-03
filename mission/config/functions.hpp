@@ -65,7 +65,6 @@ class CfgFunctions
 
 			class curator_init {};
 			class chat_init {};
-			class adv_revive_params {};
 			class init_mission_handlers {};
 		};
 
@@ -329,6 +328,35 @@ class CfgFunctions
 			class enable_arsenal_food_drink_overlay {};
 			class health_effects {};
 			class player_health_stats {};
+		};
+
+		class system_medical_shared {
+			file = "functions\systems\medical\shared";
+			class medical_map_hitpoint_to_bodypart {};
+		};
+
+		class system_medical_server {
+			file = "functions\systems\medical\server";
+			class medical_server_init {};
+			class medical_state_default {};
+			class medical_state_get {};
+			class medical_state_init_unit {};
+			class medical_state_reset_unit {};
+			class medical_replicate_state {};
+			class medical_ingest_damage {};
+			class medical_req_treat {};
+		};
+
+		class system_medical_client {
+			file = "functions\systems\medical\client";
+			class medical_action_self_treat {};
+			class medical_open_menu {};
+			class medical_open_menu_target {};
+			class medical_open_menu_self {};
+			class medical_dialog_onload {};
+			class medical_dialog_refresh {};
+			class medical_dialog_select_part {};
+			class medical_dialog_treat_selected {};
 		};
 
 		class system_dac_cong {

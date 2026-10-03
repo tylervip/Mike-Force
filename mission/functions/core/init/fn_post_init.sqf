@@ -21,6 +21,8 @@ _target_scope call vn_mf_fnc_init_mission_handlers;
 
 [] spawn vn_mf_fnc_init_comms;
 
-[] call vn_mf_fnc_adv_revive_params;
+if (isServer) then {
+    [] call vn_mf_fnc_medical_server_init;
+};
 
 call vn_mf_fnc_chat_init;

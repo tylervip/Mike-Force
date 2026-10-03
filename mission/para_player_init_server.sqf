@@ -123,6 +123,8 @@ if !(rank _player isEqualTo _rank) then
 // add cleanup handlers for dropped gear to the player
 [_player] call para_s_fnc_cleanup_register_player;
 
+[_player] call vn_mf_fnc_medical_state_init_unit;
+
 // send all variables to player
 [_local_vars] remoteExecCall ["para_c_fnc_set_local_var",_player];
 

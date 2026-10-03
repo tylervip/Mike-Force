@@ -11,3 +11,6 @@
 
 // Example display
 #include "Example\vn_mf_RscDisplayExample.hpp"
+
+// Medical display
+#include "medical\vn_mf_RscDisplayMedical.hpp"

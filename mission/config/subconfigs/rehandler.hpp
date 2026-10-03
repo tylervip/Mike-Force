@@ -18,6 +18,10 @@ class eatdrink
 {
 	fnc = "vn_mf_fnc_eatdrink";
 };
+class medical_req_treat
+{
+	fnc = "vn_mf_fnc_medical_req_treat";
+};
 class packageforslingloading
 {
 	fnc = "vn_mf_fnc_packageforslingloading";
